@@ -58,7 +58,8 @@ class Student
       WHERE name = ? 
       LIMIT 1 
     SQL
-    DB[:conn].execute(sql, self.name)
+    DB[:conn].execute(sql, self.name).map |row|
+    
 
 
 end
