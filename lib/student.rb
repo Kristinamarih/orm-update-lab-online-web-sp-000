@@ -58,7 +58,7 @@ class Student
       WHERE name = ? 
     SQL
     result = DB[:conn].execute(sql, name)[0]
-      self.
+      Student.new 
     end
   end
   
