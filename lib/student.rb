@@ -57,7 +57,7 @@ class Student
       SELECT * FROM students
       WHERE name = ? 
     SQL
-    result = DB[:conn].execute(sql, self.name)
+    result = DB[:conn].execute(sql, name)
       self.
     end
   end
