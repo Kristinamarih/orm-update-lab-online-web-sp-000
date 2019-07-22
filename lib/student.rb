@@ -59,7 +59,7 @@ class Student
       LIMIT 1 
     SQL
     DB[:conn].execute(sql, self.name).map |row|
-    
+      self.new_from_db
 
 
 end
