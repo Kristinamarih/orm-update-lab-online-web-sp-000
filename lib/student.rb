@@ -56,6 +56,7 @@ class Student
     sql = <<_SQL
       SELECT * FROM students
       WHERE name = ? 
+      LIMIT 1 
       
 
 
